@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.safe    { background: lightgreen; }
+.visited { background: lightblue; }
+.unknown { background: lightgray; }
+.danger  { background: red; }
+.agent   { background: yellow; }

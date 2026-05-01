@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wumpus Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Wumpus World</h2>
+
+<label>Rows: <input type="number" id="rowInput" value="4" min="3" max="7" style="width:40px"></label>
+<label>Cols: <input type="number" id="colInput" value="4" min="3" max="7" style="width:40px"></label>
+<label>Pits: <input type="number" id="pitInput" value="3" min="1" max="8" style="width:40px"></label>
+
+<button onclick="init()">Start</button>
+<button onclick="moveAgent()">Next Move</button>
+
+<p id="info"></p>
+<p id="stepInfo"></p>
+
+<div id="grid"></div>
+
+<script src="logic.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
